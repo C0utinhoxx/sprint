@@ -7,7 +7,7 @@ function printReport(userData, sessionData, billingData) {
   const endTime = new Date(startTime.getTime() + sessionData.durationMinutes * 60000);
 
   console.log("\n" + "─".repeat(50));
-  console.log("  📋 RELATÓRIO DA SESSÃO");
+  console.log("  RELATÓRIO DA SESSÃO");
   console.log("─".repeat(50));
   console.log(`  Usuário       : ${userData.name}`);
   console.log(`  Tipo          : ${userData.userType.toUpperCase()}`);
@@ -20,7 +20,7 @@ function printReport(userData, sessionData, billingData) {
   console.log(`  Horário pico  : ${billingData.isPeakHour ? "SIM (+50%)" : "NÃO"}`);
   console.log(`  Tarifa final  : R$ ${billingData.rate}/kWh`);
   console.log("─".repeat(50));
-  console.log(`  💰 TOTAL      : R$ ${billingData.total}`);
+  console.log(`   TOTAL      : R$ ${billingData.total}`);
   console.log("─".repeat(50) + "\n");
 }
 
