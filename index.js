@@ -21,7 +21,7 @@ while (true) {
     continue;
   }
   if (!NAME_PATTERN.test(name)) {
-    console.log("Nome inválido. Use apenas letras (incluindo acentos), espaços, apóstrofo, hífen ou ponto.");
+    console.log("Nome inválido. Use apenas letras (incluindo acentos), espaços, apóstrofo, hífen e ponto.");
     continue;
   }
   break;
